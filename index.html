@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="password-lock" class="password-lock">
+        <div class="password-content">
+            <label for="password-input">Enter Password:</label>
+            <input type="password" id="password-input">
+            <button id="password-submit" class="btn">Submit</button>
+            <p id="error-message" style="color: red; display: none;">Incorrect password. Please try again.</p>
+        </div>
+    </div>
+    <div id="popup" class="popup animated-popup" style="display: none;">
+        <div class="popup-content">
+            <img id="popup-image" src="envelope.png">
+            <button id="action-button" class="btn" style="display:none;">YOU HAVE MAIL!!!</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
